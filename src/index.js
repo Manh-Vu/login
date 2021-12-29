@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { BrowserRouter, Router, Swich } from 'react-router-dom';
+import './sass/index.scss';
 import App from './App';
+import Login from './componets/Login';
 import reportWebVitals from './reportWebVitals';
-
+import './asstes/box-icon-2.1.1/css/boxicons.min.css';
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Login />
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
